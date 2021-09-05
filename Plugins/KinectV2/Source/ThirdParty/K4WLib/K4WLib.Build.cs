@@ -13,7 +13,7 @@ public class K4WLib : ModuleRules
 
         SDKDIR = SDKDIR.Replace("\\", "/");
 
-        if ((Target.Platform == UnrealTargetPlatform.Win64) || (Target.Platform == UnrealTargetPlatform.Win32))
+        if (Target.Platform == UnrealTargetPlatform.Win64)
         {
             string BaseDirectory = Path.GetFullPath(Path.Combine(ModuleDirectory, "..", ".."));
             string RedistDirectory = Path.Combine(BaseDirectory, "ThirdParty", "Redist");
