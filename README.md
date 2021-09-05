@@ -1,2 +1,3 @@
 # KinectPlugins
-KinectDemoRoom  upgrade to 4.19
+https://github.com/franklzt/KinectPlugins
+KinectDemoRoom  upgrade to 5.0
