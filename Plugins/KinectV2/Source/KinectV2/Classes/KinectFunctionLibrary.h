@@ -701,7 +701,22 @@ GetBone Ref
 
 		static void ShutdownSensor();
 		
-	
+	UFUNCTION(BlueprintCallable, Category = "Kinect")
+
+		/**********************************************************************************************//**
+		 * Gets all joints.
+		 *
+		 * @author	Oleg
+		 * @date	19-Mar-22
+		 *
+		 * @param [in,out]	InFilter	A filter specifying the in.
+		 * @param	InBody				The in body.
+		 *
+		 * @return	The joints.
+		 **************************************************************************************************/
+
+		static TArray<FKinectBone> GetBodyBones(const FBody& InBody);
+
 	UFUNCTION(BlueprintCallable, Category = "Kinect|Filters")
 
 		/**********************************************************************************************//**

@@ -7,7 +7,7 @@
 #include "IKinectV2PluginPCH.h"
 #include "KinectV2Classes.h"
 #include "KinectV2InputDevice.h"
-
+#include <sstream>
 
 #define NumOfKinectBones 25
 
@@ -559,11 +559,35 @@ void UKinectFunctionLibrary::ShutdownSensor()
 
 FBody UKinectFunctionLibrary::GetSmoothedJoint(struct FBoneOrientationDoubleExponentialFilter& InFilter, const FBody& InBody)
 {
+	//UE_LOG(LogTemp, Warning, TEXT("+++++++++++++"));
+	//FBody outBody = InFilter.UpdateFilter(InBody);
+	//InBody.SaveJoint();
+	//TArray<FKinectBone> bones = outBody.KinectBones;
+	//for (size_t i = 0; i < bones.Num(); i++) {
+	//	//FString str = bones[i].Orientation.Vector().ToString();
+	//	FString str2 = bones[i].JointTransform.ToString();
 
-	return InFilter.UpdateFilter(InBody);
+	//	UE_LOG(LogTemp, Warning, TEXT("%d. -Orientation %s"), i, *str2);
+	//}	
+	return InFilter.UpdateFilter(InBody);;
 
 }
 
+TArray<FKinectBone> UKinectFunctionLibrary::GetBodyBones(const FBody& InBody)
+{
+	//UE_LOG(LogTemp, Warning, TEXT("+++++++++++++"));
+	//TArray<FKinectBone> bones = InBody.KinectBones;
+	//InBody.KinectBones()
+	//TArray <JointTransform>[NumOfKinectBones] res;
+	//for (size_t i = 0; i < bones.Num(); i++) {
+		//FString str = bones[i].Orientation.Vector().ToString();
+	//	j = bones[i]. .JointTransform;
+	//	UE_LOG(LogTemp, Warning, TEXT("%d. -transfom %s"), i, *j);
+	//}
+	//return res;
+	return InBody.KinectBones;
+
+}
 
 UTexture2D* UKinectFunctionLibrary::MapColorFrameToDepthSpace(UTexture2D* InTexture, UTexture2D* DepthTexture)
 {

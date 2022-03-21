@@ -2,6 +2,7 @@
 
 using UnrealBuildTool;
 using System.IO;
+using System.Text;
 
 public class K4WLib : ModuleRules
 {
@@ -13,23 +14,22 @@ public class K4WLib : ModuleRules
 
         SDKDIR = SDKDIR.Replace("\\", "/");
 
-        if (Target.Platform == UnrealTargetPlatform.Win64)
-        {
             string BaseDirectory = Path.GetFullPath(Path.Combine(ModuleDirectory, "..", ".."));
             string RedistDirectory = Path.Combine(BaseDirectory, "ThirdParty", "Redist");
 
 
-            string ShortPlatform = (Target.Platform == UnrealTargetPlatform.Win64) ? "x64" : "x86";
+            string ShortPlatform = "x64" ;
             PublicIncludePaths.Add(SDKDIR + "inc/");
+            //PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "inc"));
+            //Log.TraceError("aaaaaaaaaaaa");
+        //string PlatformPath = "x64/" ;
+        //string LibPath =  "C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409"
+        //string LibPath = SDKDIR + "Lib/" + PlatformPath;
 
-            string PlatformPath = (Target.Platform == UnrealTargetPlatform.Win64) ? "x64/" : "x86/";
+        //PublicAdditionalLibraries.Add(LibPath);
+        PublicAdditionalLibraries.AddRange(new string[] { "Kinect20.lib", /*"Kinect20.face.lib" */});
 
-            string LibPath = SDKDIR + "Lib/" + PlatformPath;
-
-            PublicLibraryPaths.Add(LibPath);
-            PublicAdditionalLibraries.AddRange(new string[] { "Kinect20.lib", /*"Kinect20.face.lib" */});
-
-            PublicDelayLoadDLLs.AddRange(new string[] { /*"Kinect20.Face.dll",*/ "Kinect20.dll",  /*"Microsoft.Kinect.Face.dll", /*vgbtechs/AdaBoostTech.dll", "vgbtechs/RFRProgressTech.dll" */});
+        PublicDelayLoadDLLs.AddRange(new string[] { /*"Kinect20.Face.dll",*/ "Kinect20.dll",  /*"Microsoft.Kinect.Face.dll", /*vgbtechs/AdaBoostTech.dll", "vgbtechs/RFRProgressTech.dll" */});
 
 
             /*
@@ -45,6 +45,6 @@ public class K4WLib : ModuleRules
             //PublicDelayLoadDLLs.AddRange(new string[] { "Kinect20.dll", "Kinect20.Face.dll","Microsoft.Kinect.Face.dll", /*vgbtechs/AdaBoostTech.dll", "vgbtechs/RFRProgressTech.dll" */});
             
 
-        }
+        
     }
 }
