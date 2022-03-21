@@ -1,5 +1,5 @@
 # KinectPlugins
-KinectDemoRoom  upgrade to 5.0.0
+https://github.com/franklzt/KinectPlugins  upgraded to UE5.0.0
 
 https://stackoverflow.com/questions/62493213/creating-a-new-class-c-in-unreal-with-visual-studio-gives-me-too-many-errors
 
