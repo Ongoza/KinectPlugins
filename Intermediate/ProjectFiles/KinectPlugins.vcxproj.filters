@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\KinectPlugins.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KinectPlugins.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\KinectPluginsEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\README.md" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{BB38096A-B391-30DC-A0D4-4F3EA6B44507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\KinectV2">
+      <UniqueIdentifier>{E673A559-1557-3493-8CBA-A2AE64994E30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\KinectV2\Source">
+      <UniqueIdentifier>{3F8F5633-126B-3D15-ADCE-63D802F47BD7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2">
+      <UniqueIdentifier>{6F4D473E-6718-3846-A4EA-4856EC8DEF0C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\KinectV2\Source\KinectV2\KinectV2.Build.cs">
+      <Filter>Plugins\KinectV2\Source\KinectV2</Filter>
+    </None>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2\Classes">
+      <UniqueIdentifier>{F5F4B7C5-B817-33E4-A252-D4F933219C4F}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Classes\BoneOrientationDoubleExponentialFilter.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Classes\KinectAnimInstance.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Classes\KinectEventManager.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Classes\KinectFunctionLibrary.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Classes</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2\Private">
+      <UniqueIdentifier>{AD336887-0782-31EB-8346-82C9EB60FCC0}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\BoneOrientationDoubleExponentialFilter.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\IKinectV2PluginPCH.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectAnimInstance.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectEventManager.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectFunctionLibrary.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectSensor.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectSensor.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectV2InputDevice.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Private\KinectV2InputDevice.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Private</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2\Public">
+      <UniqueIdentifier>{A7E87257-B357-31A0-96BA-0B4997CEE0A3}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Public\IKinectV2Plugin.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2\Public\KinectV2PluginStats.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2\Public</Filter>
+    </ClInclude>
+    <None Include="..\..\Plugins\KinectV2\KinectV2.uplugin">
+      <Filter>Plugins\KinectV2</Filter>
+    </None>
+    <Filter Include="Plugins\KinectV2\Resources">
+      <UniqueIdentifier>{23DF13D8-A6AA-31FE-B400-A1DEEE305746}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\KinectV2\Resources\Icon128.png">
+      <Filter>Plugins\KinectV2\Resources</Filter>
+    </None>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2Editor">
+      <UniqueIdentifier>{63CD3EF3-9B24-3E4D-B79A-6489E02761D1}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\KinectV2\Source\KinectV2Editor\KinectV2Editor.Build.cs">
+      <Filter>Plugins\KinectV2\Source\KinectV2Editor</Filter>
+    </None>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2Editor\Private">
+      <UniqueIdentifier>{327804EC-4CFD-32ED-9D51-4F4EE8079743}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Plugins\KinectV2\Source\KinectV2Editor\Private\KinectV2EditorModule.cpp">
+      <Filter>Plugins\KinectV2\Source\KinectV2Editor\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2Editor\Private\KinectV2EditorModulePCH.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2Editor\Private</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\KinectV2\Source\KinectV2Editor\Public">
+      <UniqueIdentifier>{8B011921-D738-3C70-8727-0509DE3F700B}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Plugins\KinectV2\Source\KinectV2Editor\Public\KinectV2EditorModule.h">
+      <Filter>Plugins\KinectV2\Source\KinectV2Editor\Public</Filter>
+    </ClInclude>
+    <Filter Include="Plugins\KinectV2\Source\ThirdParty">
+      <UniqueIdentifier>{2E1E6D6E-C158-36B8-9810-71AF0721BD75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\KinectV2\Source\ThirdParty\K4WLib">
+      <UniqueIdentifier>{499EC998-8B8D-3AF4-AD6F-1EF1971E6DCC}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Plugins\KinectV2\Source\ThirdParty\K4WLib\K4WLib.Build.cs">
+      <Filter>Plugins\KinectV2\Source\ThirdParty\K4WLib</Filter>
+    </None>
+    <Filter Include="Source\KinectPlugins">
+      <UniqueIdentifier>{CA70D6F6-8F7F-30D4-B24B-4E684263BDE9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\KinectPlugins\KinectPlugins.Build.cs">
+      <Filter>Source\KinectPlugins</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\KinectPlugins\KinectPlugins.cpp">
+      <Filter>Source\KinectPlugins</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\KinectPlugins\KinectPlugins.h">
+      <Filter>Source\KinectPlugins</Filter>
+    </ClInclude>
+    <Filter Include="Source\KinectPlugins\Private">
+      <UniqueIdentifier>{0E49275C-9090-3740-9010-FFD9F2326F39}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\KinectPlugins\Private\MyActor.cpp">
+      <Filter>Source\KinectPlugins\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\KinectPlugins\Public">
+      <UniqueIdentifier>{A222D7E4-AD1C-3299-AE6E-61C7C1411630}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\KinectPlugins\Public\MyActor.h">
+      <Filter>Source\KinectPlugins\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

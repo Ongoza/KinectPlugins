@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "KinectPlugins",
+			"Path": "C:\\Projects\\KinectPlugins\\Source\\KinectPlugins.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "KinectPluginsEditor",
+			"Path": "C:\\Projects\\KinectPlugins\\Source\\KinectPluginsEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
