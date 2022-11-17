@@ -1,4 +1,7 @@
 using UnrealBuildTool;
+//IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
+//UE_ENABLE_INCLUDE_ORDER_DEPRECATED_IN_501
+
 
 public class KinectV2Editor : ModuleRules
 {
